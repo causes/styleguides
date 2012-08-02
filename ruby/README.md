@@ -250,20 +250,6 @@ Copied from https://github.com/bbatsov/ruby-style-guide, with changes.
 
 * Never use `when x; ...`. See the previous rule.
 
-* Use `&&/||` for boolean expressions, `and/or` for control flow.  (Rule
-  of thumb: If you have to use outer parentheses, you are using the
-  wrong operators.)
-
-    ```Ruby
-    # boolean expression
-    if some_condition && some_other_condition
-      do_something
-    end
-
-    # control flow
-    document.saved? or document.save!
-    ```
-
 * Avoid multi-line `?:` (the ternary operator), use `if/unless` instead.
 
 * Favor modifier `if/unless` usage when you have a single-line
@@ -277,9 +263,6 @@ Copied from https://github.com/bbatsov/ruby-style-guide, with changes.
 
     # good
     do_something if some_condition
-
-    # another good option
-    some_condition and do_something
     ```
 
 * Favor `unless` over `if` for negative conditions (or control
